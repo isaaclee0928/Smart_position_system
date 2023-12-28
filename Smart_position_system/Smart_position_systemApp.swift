@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct Smart_position_systemApp: App {
+struct RoomPlan_2DApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                WelcomeView()
+            }
         }
     }
 }
