@@ -64,6 +64,7 @@ class FloorPlanScene: SKScene {
         }
     }
     
+    
     // MARK: - Camera
     
     private func addCamera() {

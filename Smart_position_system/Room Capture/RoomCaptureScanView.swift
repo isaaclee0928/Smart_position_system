@@ -69,6 +69,8 @@ struct RoomCaptureScanView: View {
         // Enable the screen to sleep again
         UIApplication.shared.isIdleTimerDisabled = false
     }
+    
+    
 }
 
 struct RoomCaptureScanView_Previews: PreviewProvider {

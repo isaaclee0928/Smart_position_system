@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		397DF4B12B5039F4002D2E37 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DF4B02B5039F4002D2E37 /* Homepage.swift */; };
 		3985F9272B3D630C005F3208 /* Smart_position_systemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */; };
 		3985F92B2B3D630F005F3208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3985F92A2B3D630F005F3208 /* Assets.xcassets */; };
 		3985F92E2B3D630F005F3208 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3985F92D2B3D630F005F3208 /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		397DF4B02B5039F4002D2E37 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		3985F9232B3D630C005F3208 /* Smart_position_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_position_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_position_systemApp.swift; sourceTree = "<group>"; };
 		3985F92A2B3D630F005F3208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				3985F9342B3D651F005F3208 /* Floor Plan */,
 				3985F92A2B3D630F005F3208 /* Assets.xcassets */,
 				3985F92C2B3D630F005F3208 /* Preview Content */,
+				397DF4B02B5039F4002D2E37 /* Homepage.swift */,
 			);
 			path = Smart_position_system;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				3985F9392B3D651F005F3208 /* DrawParameters.swift in Sources */,
 				3985F9412B3D6532005F3208 /* RoomCaptureScanView.swift in Sources */,
 				3985F93C2B3D651F005F3208 /* FloorPlanSurface.swift in Sources */,
+				397DF4B12B5039F4002D2E37 /* Homepage.swift in Sources */,
 				3985F9482B3D6550005F3208 /* CGPoint+RotateAround.swift in Sources */,
 				3985F9432B3D6532005F3208 /* RoomCaptureRepresentable.swift in Sources */,
 				3985F9422B3D6532005F3208 /* RoomCaptureModel.swift in Sources */,

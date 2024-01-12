@@ -128,6 +128,7 @@ class FloorPlanSurface: SKNode {
         addChild(hideWallShape)
     }
     
+    
     private func drawWall() {
         let wallPath = createPath(from: pointA, to: pointB)
         let wallShape = createShapeNode(from: wallPath)
@@ -172,4 +173,7 @@ class FloorPlanSurface: SKNode {
         return shapeNode
     }
     
+    
 }
+
+
