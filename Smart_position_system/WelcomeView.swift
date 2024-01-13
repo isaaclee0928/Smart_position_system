@@ -175,7 +175,6 @@ struct WelcomeView: View {
                 VStack(spacing: 10) {
                     Divider()
                     HStack(spacing: 10) {
-                        ForEach(0..<3) { _ in
                             VStack(spacing: 4) {
                                 NavigationLink(destination: RoomCaptureScanView()){
                                     VStack{
@@ -186,19 +185,50 @@ struct WelcomeView: View {
                                         Text("Home")
                                             .font(.caption2)
                                     }
-                                }
                             }
+                            
                             .frame(maxWidth: .infinity)
                             .clipped()
                             .frame(height: 60)
                             .clipped()
                             .foregroundColor(.secondary)
                         }
+                        NavigationLink(destination: RoomCaptureScanView()){
+                            VStack{
+                                Image(systemName: "plus.circle.fill")
+                                    .resizable()
+                                    .frame(width:50, height: 50)
+                                    .clipped()
+                            }
+                    }
+                    
+                    .frame(maxWidth: .infinity)
+                    .clipped()
+                    .frame(height: 60)
+                    .clipped()
+                    .foregroundColor(.secondary)
+                        
+                        NavigationLink(destination: RoomCaptureScanView()){
+                            VStack{
+                                Image(systemName: "person.fill")
+                                    .imageScale(.large)
+                                    .frame(height: 40)
+                                    .clipped()
+                                Text("profile")
+                                    .font(.caption2)
+                            }
+                    }
+                    
+                    .frame(maxWidth: .infinity)
+                    .clipped()
+                    .frame(height: 60)
+                    .clipped()
+                    .foregroundColor(.secondary)
                     }
                     .padding(.horizontal, 15)
                     .padding(.top, 5)
                 }
-                .frame(height: 70, alignment: .top)
+                .frame(height: 90, alignment: .top)
                 .clipped()
                 .background {
                     Rectangle()
