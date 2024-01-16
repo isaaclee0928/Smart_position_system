@@ -8,6 +8,7 @@ struct WelcomeView: View {
             Text("SmartLiving".uppercased())
                 .font(.system(.headline, design: .serif, weight: .bold))
                 .foregroundColor(.mint.opacity(0.75))
+     
         }
         ScrollView {
             VStack(alignment: .leading) {
@@ -15,7 +16,7 @@ struct WelcomeView: View {
                     .font(.system(.largeTitle, weight: .medium))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [.red, .blue, .green, .yellow],
+                            colors: [.blue, .red],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -166,7 +167,7 @@ struct WelcomeView: View {
             .padding(.bottom)
         }
         .background {
-            RoundedRectangle(cornerRadius: 1, style: .continuous)
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(Color(.displayP3, red: 130/255, green: 94/255, blue: 98/255).opacity(0.21))
         }
         
