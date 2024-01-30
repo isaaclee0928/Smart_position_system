@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FBD41602B68AA5C0070185D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FBD415F2B68AA5C0070185D /* GoogleService-Info.plist */; };
 		0FBD41632B68AB500070185D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBD41622B68AB500070185D /* FirebaseAnalytics */; };
 		0FBD41652B68AB500070185D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBD41642B68AB500070185D /* FirebaseAnalyticsOnDeviceConversion */; };
 		0FBD41672B68AB500070185D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBD41662B68AB500070185D /* FirebaseAnalyticsSwift */; };
@@ -35,6 +34,12 @@
 		0FBD41932B68AB500070185D /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBD41922B68AB500070185D /* FirebaseRemoteConfigSwift */; };
 		0FBD41952B68AB500070185D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBD41942B68AB500070185D /* FirebaseStorage */; };
 		0FBD41972B68AB500070185D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBD41962B68AB500070185D /* FirebaseStorageCombine-Community */; };
+		0FBD419A2B68AD3D0070185D /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD41992B68AD3D0070185D /* SignUpModel.swift */; };
+		0FBD419C2B68AD5F0070185D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD419B2B68AD5F0070185D /* SignUpView.swift */; };
+		0FBD419E2B68AD790070185D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD419D2B68AD790070185D /* LoginModel.swift */; };
+		0FBD41A02B68AD7E0070185D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD419F2B68AD7D0070185D /* SignInView.swift */; };
+		0FBD41A22B68E69C0070185D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FBD41A12B68E69C0070185D /* GoogleService-Info.plist */; };
+		0FBD41A62B68F0100070185D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD41A52B68F0100070185D /* ContentView.swift */; };
 		396C97FB2B62117F00850CA4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FA2B62117F00850CA4 /* Profile.swift */; };
 		396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FC2B68A94600850CA4 /* FloorPlanView.swift */; };
 		397DF4B12B5039F4002D2E37 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DF4B02B5039F4002D2E37 /* Homepage.swift */; };
@@ -55,7 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FBD415F2B68AA5C0070185D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FBD41992B68AD3D0070185D /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		0FBD419B2B68AD5F0070185D /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		0FBD419D2B68AD790070185D /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		0FBD419F2B68AD7D0070185D /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0FBD41A12B68E69C0070185D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Smart-position-system-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0FBD41A52B68F0100070185D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		396C97FA2B62117F00850CA4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		396C97FC2B68A94600850CA4 /* FloorPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanView.swift; sourceTree = "<group>"; };
 		397DF4B02B5039F4002D2E37 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
@@ -117,9 +128,21 @@
 		0FBD415E2B68AA3F0070185D /* Firebase_API */ = {
 			isa = PBXGroup;
 			children = (
-				0FBD415F2B68AA5C0070185D /* GoogleService-Info.plist */,
+				0FBD41A12B68E69C0070185D /* GoogleService-Info.plist */,
 			);
 			path = Firebase_API;
+			sourceTree = "<group>";
+		};
+		0FBD41982B68AC8F0070185D /* Firebase_Login_Units */ = {
+			isa = PBXGroup;
+			children = (
+				0FBD419D2B68AD790070185D /* LoginModel.swift */,
+				0FBD419F2B68AD7D0070185D /* SignInView.swift */,
+				0FBD419B2B68AD5F0070185D /* SignUpView.swift */,
+				0FBD41992B68AD3D0070185D /* SignUpModel.swift */,
+				0FBD41A52B68F0100070185D /* ContentView.swift */,
+			);
+			path = Firebase_Login_Units;
 			sourceTree = "<group>";
 		};
 		3985F91A2B3D630C005F3208 = {
@@ -141,6 +164,8 @@
 		3985F9252B3D630C005F3208 /* Smart_position_system */ = {
 			isa = PBXGroup;
 			children = (
+				0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */,
+				0FBD41982B68AC8F0070185D /* Firebase_Login_Units */,
 				0FBD415E2B68AA3F0070185D /* Firebase_API */,
 				3985F9442B3D6550005F3208 /* Extensions */,
 				3985F94B2B3D6C30005F3208 /* WelcomeView.swift */,
@@ -286,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3985F94A2B3D6BAF005F3208 /* RoomPlan-2D-Info.plist in Resources */,
-				0FBD41602B68AA5C0070185D /* GoogleService-Info.plist in Resources */,
+				0FBD41A22B68E69C0070185D /* GoogleService-Info.plist in Resources */,
 				3985F92E2B3D630F005F3208 /* Preview Assets.xcassets in Resources */,
 				3985F92B2B3D630F005F3208 /* Assets.xcassets in Resources */,
 			);
@@ -299,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBD41A02B68AD7E0070185D /* SignInView.swift in Sources */,
 				3985F9392B3D651F005F3208 /* DrawParameters.swift in Sources */,
 				3985F9412B3D6532005F3208 /* RoomCaptureScanView.swift in Sources */,
 				3985F93C2B3D651F005F3208 /* FloorPlanSurface.swift in Sources */,
@@ -306,11 +332,15 @@
 				397DF4B12B5039F4002D2E37 /* Homepage.swift in Sources */,
 				3985F9482B3D6550005F3208 /* CGPoint+RotateAround.swift in Sources */,
 				3985F9432B3D6532005F3208 /* RoomCaptureRepresentable.swift in Sources */,
+				0FBD41A62B68F0100070185D /* ContentView.swift in Sources */,
 				3985F9422B3D6532005F3208 /* RoomCaptureModel.swift in Sources */,
+				0FBD419E2B68AD790070185D /* LoginModel.swift in Sources */,
 				3985F94C2B3D6C30005F3208 /* WelcomeView.swift in Sources */,
 				3985F93B2B3D651F005F3208 /* FloorPlanObject.swift in Sources */,
 				396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */,
 				3985F9472B3D6550005F3208 /* simd_float4x4+EulerAnglesAndPosition.swift in Sources */,
+				0FBD419C2B68AD5F0070185D /* SignUpView.swift in Sources */,
+				0FBD419A2B68AD3D0070185D /* SignUpModel.swift in Sources */,
 				3985F93A2B3D651F005F3208 /* FloorPlanScene.swift in Sources */,
 				3985F9272B3D630C005F3208 /* Smart_position_systemApp.swift in Sources */,
 			);
@@ -443,12 +473,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Smart_position_system/Smart_position_system.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart_position_system/Preview Content\"";
-				DEVELOPMENT_TEAM = 42976CSAYU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smart-position-system-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "RoomPlan requires the camera to scan a room";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -475,12 +507,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Smart_position_system/Smart_position_system.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart_position_system/Preview Content\"";
-				DEVELOPMENT_TEAM = 42976CSAYU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smart-position-system-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "RoomPlan requires the camera to scan a room";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

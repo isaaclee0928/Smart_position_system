@@ -10,6 +10,7 @@ struct WelcomeView: View {
                 .foregroundColor(.mint.opacity(0.75))
      
         }
+        //Main Content
         ScrollView {
             VStack(alignment: .leading) {
                 Text("Device")
@@ -171,6 +172,7 @@ struct WelcomeView: View {
                 .fill(Color(.displayP3, red: 130/255, green: 94/255, blue: 98/255).opacity(0.21))
         }
         
+        //navigation
         .overlay(alignment: .bottom){
             NavigationStack{
                 VStack(spacing: 10) {
