@@ -196,7 +196,7 @@ struct WelcomeView: View {
                         }
                         NavigationLink(destination: RoomCaptureScanView()){
                             VStack{
-                                Image(systemName: "plus.circle.fill")
+                                Image(systemName: "map.circle.fill")
                                     .resizable()
                                     .frame(width:50, height: 50)
                                     .clipped()
@@ -209,7 +209,7 @@ struct WelcomeView: View {
                     .clipped()
                     .foregroundColor(.secondary)
                         
-                        NavigationLink(destination: RoomCaptureScanView()){
+                        NavigationLink(destination: Profile()){
                             VStack{
                                 Image(systemName: "person.fill")
                                     .imageScale(.large)

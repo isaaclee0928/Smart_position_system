@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		396C97FB2B62117F00850CA4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FA2B62117F00850CA4 /* Profile.swift */; };
+		396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FC2B68A94600850CA4 /* FloorPlanView.swift */; };
 		397DF4B12B5039F4002D2E37 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DF4B02B5039F4002D2E37 /* Homepage.swift */; };
 		3985F9272B3D630C005F3208 /* Smart_position_systemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */; };
 		3985F92B2B3D630F005F3208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3985F92A2B3D630F005F3208 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		396C97FA2B62117F00850CA4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		396C97FC2B68A94600850CA4 /* FloorPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanView.swift; sourceTree = "<group>"; };
 		397DF4B02B5039F4002D2E37 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		3985F9232B3D630C005F3208 /* Smart_position_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_position_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_position_systemApp.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				3985F92A2B3D630F005F3208 /* Assets.xcassets */,
 				3985F92C2B3D630F005F3208 /* Preview Content */,
 				397DF4B02B5039F4002D2E37 /* Homepage.swift */,
+				396C97FA2B62117F00850CA4 /* Profile.swift */,
+				396C97FC2B68A94600850CA4 /* FloorPlanView.swift */,
 			);
 			path = Smart_position_system;
 			sourceTree = "<group>";
@@ -198,12 +204,14 @@
 				3985F9392B3D651F005F3208 /* DrawParameters.swift in Sources */,
 				3985F9412B3D6532005F3208 /* RoomCaptureScanView.swift in Sources */,
 				3985F93C2B3D651F005F3208 /* FloorPlanSurface.swift in Sources */,
+				396C97FB2B62117F00850CA4 /* Profile.swift in Sources */,
 				397DF4B12B5039F4002D2E37 /* Homepage.swift in Sources */,
 				3985F9482B3D6550005F3208 /* CGPoint+RotateAround.swift in Sources */,
 				3985F9432B3D6532005F3208 /* RoomCaptureRepresentable.swift in Sources */,
 				3985F9422B3D6532005F3208 /* RoomCaptureModel.swift in Sources */,
 				3985F94C2B3D6C30005F3208 /* WelcomeView.swift in Sources */,
 				3985F93B2B3D651F005F3208 /* FloorPlanObject.swift in Sources */,
+				396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */,
 				3985F9472B3D6550005F3208 /* simd_float4x4+EulerAnglesAndPosition.swift in Sources */,
 				3985F93A2B3D651F005F3208 /* FloorPlanScene.swift in Sources */,
 				3985F9272B3D630C005F3208 /* Smart_position_systemApp.swift in Sources */,
