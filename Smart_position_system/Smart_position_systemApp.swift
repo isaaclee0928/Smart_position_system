@@ -27,7 +27,8 @@ struct RoomPlan_2DApp: App {
     var body: some Scene {
         WindowGroup {
                 //WelcomeView()
-                ContentView()
+//                ContentView()
+            FloorPlanView()
             
         }
     }
