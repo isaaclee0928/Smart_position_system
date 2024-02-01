@@ -7,9 +7,12 @@
 
 import Foundation
 import RoomPlan
+import FirebaseCore
+import FirebaseFirestore
 
 class RoomCaptureModel: RoomCaptureSessionDelegate {
-    
+    //declare FireStore variable
+    let db = Firestore.firestore()
     // Singleton
     static let shared = RoomCaptureModel()
     
@@ -61,6 +64,9 @@ class RoomCaptureModel: RoomCaptureSessionDelegate {
         
         Task {
             finalRoom = try! await roomBuilder.capturedRoom(from: data)
+            try! await db.collection("test").document("Floorplan").setData([
+                "CGPoint": data,
+              ])
         }
     }
     
