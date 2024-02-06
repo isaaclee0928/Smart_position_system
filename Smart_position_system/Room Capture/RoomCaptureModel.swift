@@ -64,9 +64,14 @@ class RoomCaptureModel: RoomCaptureSessionDelegate {
         
         Task {
             finalRoom = try! await roomBuilder.capturedRoom(from: data)
-            try! await db.collection("test").document("Floorplan").setData([
-                "CGPoint": data,
-              ])
+//            try! await db.collection("test").document("Floorplan").setData([
+//                "CGPoint": data,
+//              ])
+//            var capturedRoomArray = [CapturedRoom.USDExportOptions(arrayLiteral: CapturedRoom.USDExportOptions.mesh)]
+//            print(capturedRoomArray)
+            // Store the array in Firebase
+           // try await  db.collection("test").document("Floorplan").setData(["matrix": "sss"])
+            
         }
     }
     
