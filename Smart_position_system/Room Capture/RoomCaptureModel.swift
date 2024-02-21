@@ -70,7 +70,7 @@ class RoomCaptureModel: RoomCaptureSessionDelegate {
 //            var capturedRoomArray = [CapturedRoom.USDExportOptions(arrayLiteral: CapturedRoom.USDExportOptions.mesh)]
 //            print(capturedRoomArray)
             // Store the array in Firebase
-           // try await  db.collection("test").document("Floorplan").setData(["matrix": "sss"])
+           try await  db.collection("test").document("Floorplan").setData(["matrix": "sss"])
             
         }
     }

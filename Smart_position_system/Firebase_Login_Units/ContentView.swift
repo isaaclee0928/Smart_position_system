@@ -12,12 +12,12 @@ import Firebase
 struct ContentView: View {
     // Log Status
     @AppStorage("log_status") var logStatus: Bool = false
-    
+    @EnvironmentObject var firestoreManager: FirestoreManager
     var body: some View {
 
         NavigationView {
             if logStatus{
-                FloorPlanView().navigationBarBackButtonHidden(false)
+                DisplayView().navigationBarBackButtonHidden(false)
             }else {
 
                 SignInView().navigationBarBackButtonHidden(true)
@@ -34,5 +34,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+                    .environmentObject(FirestoreManager())
     }
 }

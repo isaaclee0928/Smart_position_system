@@ -28,8 +28,8 @@ struct RoomPlan_2DApp: App {
         WindowGroup {
                 //WelcomeView()
 //                ContentView()
-            FloorPlanView()
-            
+            //FloorPlanView()
+            DisplayView()
         }
     }
 }

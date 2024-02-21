@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F672C322B722D7B00DFFF85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F672C312B722D7B00DFFF85 /* GoogleService-Info.plist */; };
 		0F672C352B7230BC00DFFF85 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F672C342B7230BC00DFFF85 /* FirebaseAnalytics */; };
 		0F672C372B7230BC00DFFF85 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0F672C362B7230BC00DFFF85 /* FirebaseAuth */; };
 		0F672C392B7230BC00DFFF85 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F672C382B7230BC00DFFF85 /* FirebaseCrashlytics */; };
@@ -26,6 +25,10 @@
 		0FBD419E2B68AD790070185D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD419D2B68AD790070185D /* LoginModel.swift */; };
 		0FBD41A02B68AD7E0070185D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD419F2B68AD7D0070185D /* SignInView.swift */; };
 		0FBD41A62B68F0100070185D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD41A52B68F0100070185D /* ContentView.swift */; };
+		0FD63C982B844DF3002B51E2 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD63C972B844DF3002B51E2 /* DisplayView.swift */; };
+		0FD63C9B2B84504F002B51E2 /* FireStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD63C9A2B84504F002B51E2 /* FireStoreManager.swift */; };
+		0FD63C9D2B84793E002B51E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD63C9C2B84793E002B51E2 /* GoogleService-Info.plist */; };
+		0FD63C9F2B85E54B002B51E2 /* CoordinateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD63C9E2B85E54B002B51E2 /* CoordinateModel.swift */; };
 		396C97FB2B62117F00850CA4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FA2B62117F00850CA4 /* Profile.swift */; };
 		396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FC2B68A94600850CA4 /* FloorPlanView.swift */; };
 		396C98052B6A3EF000850CA4 /* ViewFloorPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C98042B6A3EF000850CA4 /* ViewFloorPlanView.swift */; };
@@ -46,13 +49,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F672C312B722D7B00DFFF85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FBD41992B68AD3D0070185D /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		0FBD419B2B68AD5F0070185D /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		0FBD419D2B68AD790070185D /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		0FBD419F2B68AD7D0070185D /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Smart-position-system-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0FBD41A52B68F0100070185D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0FD63C972B844DF3002B51E2 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		0FD63C9A2B84504F002B51E2 /* FireStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreManager.swift; sourceTree = "<group>"; };
+		0FD63C9C2B84793E002B51E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FD63C9E2B85E54B002B51E2 /* CoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateModel.swift; sourceTree = "<group>"; };
 		396C97FA2B62117F00850CA4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		396C97FC2B68A94600850CA4 /* FloorPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanView.swift; sourceTree = "<group>"; };
 		396C98042B6A3EF000850CA4 /* ViewFloorPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFloorPlanView.swift; sourceTree = "<group>"; };
@@ -100,7 +106,7 @@
 		0FBD415E2B68AA3F0070185D /* Firebase_API */ = {
 			isa = PBXGroup;
 			children = (
-				0F672C312B722D7B00DFFF85 /* GoogleService-Info.plist */,
+				0FD63C9C2B84793E002B51E2 /* GoogleService-Info.plist */,
 			);
 			path = Firebase_API;
 			sourceTree = "<group>";
@@ -115,6 +121,23 @@
 				0FBD41A52B68F0100070185D /* ContentView.swift */,
 			);
 			path = Firebase_Login_Units;
+			sourceTree = "<group>";
+		};
+		0FD63C962B844DAE002B51E2 /* TEST */ = {
+			isa = PBXGroup;
+			children = (
+				0FD63C972B844DF3002B51E2 /* DisplayView.swift */,
+			);
+			path = TEST;
+			sourceTree = "<group>";
+		};
+		0FD63C992B84501E002B51E2 /* Firebase_Data */ = {
+			isa = PBXGroup;
+			children = (
+				0FD63C9A2B84504F002B51E2 /* FireStoreManager.swift */,
+				0FD63C9E2B85E54B002B51E2 /* CoordinateModel.swift */,
+			);
+			path = Firebase_Data;
 			sourceTree = "<group>";
 		};
 		3985F91A2B3D630C005F3208 = {
@@ -136,6 +159,8 @@
 		3985F9252B3D630C005F3208 /* Smart_position_system */ = {
 			isa = PBXGroup;
 			children = (
+				0FD63C992B84501E002B51E2 /* Firebase_Data */,
+				0FD63C962B844DAE002B51E2 /* TEST */,
 				0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */,
 				0FBD41982B68AC8F0070185D /* Firebase_Login_Units */,
 				0FBD415E2B68AA3F0070185D /* Firebase_API */,
@@ -269,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3985F94A2B3D6BAF005F3208 /* RoomPlan-2D-Info.plist in Resources */,
-				0F672C322B722D7B00DFFF85 /* GoogleService-Info.plist in Resources */,
+				0FD63C9D2B84793E002B51E2 /* GoogleService-Info.plist in Resources */,
 				3985F92E2B3D630F005F3208 /* Preview Assets.xcassets in Resources */,
 				3985F92B2B3D630F005F3208 /* Assets.xcassets in Resources */,
 			);
@@ -293,9 +318,12 @@
 				0FBD41A62B68F0100070185D /* ContentView.swift in Sources */,
 				3985F9422B3D6532005F3208 /* RoomCaptureModel.swift in Sources */,
 				0FBD419E2B68AD790070185D /* LoginModel.swift in Sources */,
+				0FD63C9F2B85E54B002B51E2 /* CoordinateModel.swift in Sources */,
 				3985F94C2B3D6C30005F3208 /* WelcomeView.swift in Sources */,
 				3985F93B2B3D651F005F3208 /* FloorPlanObject.swift in Sources */,
+				0FD63C982B844DF3002B51E2 /* DisplayView.swift in Sources */,
 				396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */,
+				0FD63C9B2B84504F002B51E2 /* FireStoreManager.swift in Sources */,
 				3985F9472B3D6550005F3208 /* simd_float4x4+EulerAnglesAndPosition.swift in Sources */,
 				0FBD419C2B68AD5F0070185D /* SignUpView.swift in Sources */,
 				0FBD419A2B68AD3D0070185D /* SignUpModel.swift in Sources */,
