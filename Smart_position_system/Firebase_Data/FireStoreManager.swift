@@ -16,6 +16,7 @@ class FirestoreManager: ObservableObject {
 //        FetchCoordinate()
 //    }
     @Published var anchor: [Anchor_Coordinate] = []
+    @Published var Tag: [Tag_Coordinate] = []
     enum VendingMachineError: Error {
         case invalidSelection
         case insufficientFunds(coinsNeeded: Int)
@@ -23,7 +24,9 @@ class FirestoreManager: ObservableObject {
     }
     func FetchCoordinate() {
         let db = Firestore.firestore()
+        //locate the document path of firestore
         let documentRef = db.collection("Anchor")
+        //Anchor_Coordinate form Firestore {NSArray-NSNumber to Float Array}
         documentRef.addSnapshotListener {(snapshot, error) in
             if error != nil {
                 print(error?.localizedDescription)
@@ -49,6 +52,32 @@ class FirestoreManager: ObservableObject {
                 }
             }
         }
-        
+        //locate the document path of firestore
+        let documentRef_Tag = db.collection("Tag")
+        //Tag_Coordinate form Firestore {Changes every 5 second}
+        documentRef_Tag.addSnapshotListener {(snapshot, error) in
+            if error != nil {
+                print(error?.localizedDescription)
+            } else {
+                if let snapshot = snapshot, !snapshot.isEmpty {
+                    print("Posted data got")
+                    
+                    self.Tag = snapshot.documents.map { document in
+                        let data = document.data()
+                        //Anchor_Coordinate(coordinate: document.get("coordinate") as? [Float] ?? [0] )
+                        
+                        let coordinate = data["coordinate"] as? [NSNumber] ?? []
+                        print("coordinate:   " ,coordinate)
+                        let floatCoordinates = coordinate.map { $0.floatValue }
+                        print("float: ", floatCoordinates)
+                        return Tag_Coordinate(coordinate: floatCoordinates)
+                    }
+                    //print(self.anchor[0])
+                    
+                } else {
+                    print("GET POSTED MESSAGES no data")
+                }
+            }
+        }
     }
 }

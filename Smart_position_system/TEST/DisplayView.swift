@@ -33,6 +33,18 @@ struct DisplayView: View {
                         )
                 }
             }
+            
+            ForEach(viewmodel.Tag) { tag in
+                VStack(alignment: .leading) {
+                    Image(systemName: "")
+                        .frame(width: 10, height: 10)
+                        .background(Color.red)
+                        .position( /// here!
+                            x: CGFloat(tag.coordinate[0]),
+                            y:  CGFloat(tag.coordinate[1])
+                        )
+                }
+            }
 //            List(viewmodel.anchor) { Anchors in
 //                                VStack(alignment: .leading) {
 //                                    Image(systemName: "")
