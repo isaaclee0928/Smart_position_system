@@ -25,7 +25,7 @@ struct DisplayView: View {
             ForEach(viewmodel.anchor) { Anchors in
                 VStack(alignment: .leading) {
                     Image(systemName: "")
-                        .frame(width: 30, height: 30)
+                        .frame(width: 10, height: 10)
                         .background(Color.green)
                         .position( /// here!
                             x: CGFloat(Anchors.coordinate[0]),

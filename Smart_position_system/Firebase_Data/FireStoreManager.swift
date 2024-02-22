@@ -16,7 +16,11 @@ class FirestoreManager: ObservableObject {
 //        FetchCoordinate()
 //    }
     @Published var anchor: [Anchor_Coordinate] = []
-    
+    enum VendingMachineError: Error {
+        case invalidSelection
+        case insufficientFunds(coinsNeeded: Int)
+        case outOfStock
+    }
     func FetchCoordinate() {
         let db = Firestore.firestore()
         let documentRef = db.collection("Anchor")
@@ -32,9 +36,11 @@ class FirestoreManager: ObservableObject {
                         let data = document.data()
                         //Anchor_Coordinate(coordinate: document.get("coordinate") as? [Float] ?? [0] )
                         
-                        let coordinate = data["coordinate"] as? [Float] ?? []
-                        
-                        return Anchor_Coordinate(coordinate: coordinate)
+                        let coordinate = data["coordinate"] as? [NSNumber] ?? []
+                        print("coordinate:   " ,coordinate)
+                        let floatCoordinates = coordinate.map { $0.floatValue }
+                        print("float: ", floatCoordinates)
+                        return Anchor_Coordinate(coordinate: floatCoordinates)
                     }
                     //print(self.anchor[0])
                     
