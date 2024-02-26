@@ -140,6 +140,14 @@
 			path = Firebase_Data;
 			sourceTree = "<group>";
 		};
+		393398D52B8C58C8004B852C /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				3985F94B2B3D6C30005F3208 /* WelcomeView.swift */,
+			);
+			name = BottomBar;
+			sourceTree = "<group>";
+		};
 		3985F91A2B3D630C005F3208 = {
 			isa = PBXGroup;
 			children = (
@@ -159,13 +167,13 @@
 		3985F9252B3D630C005F3208 /* Smart_position_system */ = {
 			isa = PBXGroup;
 			children = (
+				393398D52B8C58C8004B852C /* BottomBar */,
 				0FD63C992B84501E002B51E2 /* Firebase_Data */,
 				0FD63C962B844DAE002B51E2 /* TEST */,
 				0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */,
 				0FBD41982B68AC8F0070185D /* Firebase_Login_Units */,
 				0FBD415E2B68AA3F0070185D /* Firebase_API */,
 				3985F9442B3D6550005F3208 /* Extensions */,
-				3985F94B2B3D6C30005F3208 /* WelcomeView.swift */,
 				3985F9492B3D6BAE005F3208 /* RoomPlan-2D-Info.plist */,
 				3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */,
 				3985F93D2B3D6532005F3208 /* Room Capture */,
@@ -463,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart_position_system/Preview Content\"";
-				DEVELOPMENT_TEAM = B5MK75C8B9;
+				DEVELOPMENT_TEAM = 42976CSAYU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Smart-position-system-Info.plist";
@@ -497,7 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart_position_system/Preview Content\"";
-				DEVELOPMENT_TEAM = B5MK75C8B9;
+				DEVELOPMENT_TEAM = 42976CSAYU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Smart-position-system-Info.plist";

@@ -19,6 +19,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   }
 }
 
+
+
 @main
 struct RoomPlan_2DApp: App {
     
@@ -26,12 +28,10 @@ struct RoomPlan_2DApp: App {
     
     var body: some Scene {
         WindowGroup {
-                //WelcomeView()
-//                ContentView()
+            //WelcomeView()
+            //                ContentView()
             //FloorPlanView()
-            DisplayView().frame(minWidth: -50, idealWidth: 200, maxWidth: -450,
-                                minHeight: 100, idealHeight: 200, maxHeight: -700,
-                                alignment: .center)
+            WelcomeView()
         }
     }
 }

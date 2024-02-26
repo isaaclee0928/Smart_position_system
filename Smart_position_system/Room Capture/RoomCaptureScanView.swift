@@ -8,7 +8,9 @@
 import SwiftUI
 import _SpriteKit_SwiftUI
 
+
 struct RoomCaptureScanView: View {
+   
     // MARK: - Properties & State
     private let model = RoomCaptureModel.shared
     
@@ -74,6 +76,7 @@ struct RoomCaptureScanView: View {
 }
 
 struct RoomCaptureScanView_Previews: PreviewProvider {
+    
     static var previews: some View {
         RoomCaptureScanView()
     }
