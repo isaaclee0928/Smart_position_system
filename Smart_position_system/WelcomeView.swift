@@ -309,7 +309,11 @@ struct WelcomeView: View {
                             NavigationLink(destination: DisplayView()) {
                                 Image(systemName: "photo")
                                 Text("Places") }.tag(2)
+                            
                         }
+                        .frame(minWidth: -50, idealWidth: 200, maxWidth: -450,
+                                                        minHeight: 100, idealHeight: 200, maxHeight: -700,
+                                                        alignment: .center)
                     }
     }
 }
