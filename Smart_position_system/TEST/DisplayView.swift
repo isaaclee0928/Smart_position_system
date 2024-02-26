@@ -23,6 +23,7 @@ struct DisplayView: View {
                 
             //Firestore Call coordinate real time display
             ForEach(viewmodel.anchor) { Anchors in
+
                 VStack(alignment: .leading) {
                     Image(systemName: "")
                         .frame(width: 10, height: 10)
@@ -35,13 +36,15 @@ struct DisplayView: View {
             }
             
             ForEach(viewmodel.Tag) { tag in
+                var A_x = tag.coordinate[0] + Float.random(in: 1..<10)
+                var A_y = tag.coordinate[1] + Float.random(in: 1..<10)
                 VStack(alignment: .leading) {
                     Image(systemName: "")
                         .frame(width: 10, height: 10)
                         .background(Color.red)
                         .position( /// here!
-                            x: CGFloat(tag.coordinate[0]),
-                            y:  CGFloat(tag.coordinate[1])
+                            x: CGFloat(A_x),
+                            y:  CGFloat(A_y)
                         )
                 }
             }

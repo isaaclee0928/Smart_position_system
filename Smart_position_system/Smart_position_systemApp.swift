@@ -29,7 +29,9 @@ struct RoomPlan_2DApp: App {
                 //WelcomeView()
 //                ContentView()
             //FloorPlanView()
-            DisplayView()
+            DisplayView().frame(minWidth: -50, idealWidth: 200, maxWidth: -450,
+                                minHeight: 100, idealHeight: 200, maxHeight: -700,
+                                alignment: .center)
         }
     }
 }
