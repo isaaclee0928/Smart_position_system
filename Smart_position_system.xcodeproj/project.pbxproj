@@ -30,8 +30,6 @@
 		0FD63C9D2B84793E002B51E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD63C9C2B84793E002B51E2 /* GoogleService-Info.plist */; };
 		0FD63C9F2B85E54B002B51E2 /* CoordinateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD63C9E2B85E54B002B51E2 /* CoordinateModel.swift */; };
 		396C97FB2B62117F00850CA4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FA2B62117F00850CA4 /* Profile.swift */; };
-		396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FC2B68A94600850CA4 /* FloorPlanView.swift */; };
-		396C98052B6A3EF000850CA4 /* ViewFloorPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C98042B6A3EF000850CA4 /* ViewFloorPlanView.swift */; };
 		3985F9272B3D630C005F3208 /* Smart_position_systemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */; };
 		3985F92B2B3D630F005F3208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3985F92A2B3D630F005F3208 /* Assets.xcassets */; };
 		3985F92E2B3D630F005F3208 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3985F92D2B3D630F005F3208 /* Preview Assets.xcassets */; };
@@ -53,15 +51,13 @@
 		0FBD419B2B68AD5F0070185D /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		0FBD419D2B68AD790070185D /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		0FBD419F2B68AD7D0070185D /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Smart-position-system-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Smart-position-system-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0FBD41A52B68F0100070185D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FD63C972B844DF3002B51E2 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		0FD63C9A2B84504F002B51E2 /* FireStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreManager.swift; sourceTree = "<group>"; };
 		0FD63C9C2B84793E002B51E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FD63C9E2B85E54B002B51E2 /* CoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateModel.swift; sourceTree = "<group>"; };
 		396C97FA2B62117F00850CA4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		396C97FC2B68A94600850CA4 /* FloorPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanView.swift; sourceTree = "<group>"; };
-		396C98042B6A3EF000850CA4 /* ViewFloorPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFloorPlanView.swift; sourceTree = "<group>"; };
 		3985F9232B3D630C005F3208 /* Smart_position_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_position_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_position_systemApp.swift; sourceTree = "<group>"; };
 		3985F92A2B3D630F005F3208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +99,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F179E0C2B8DD3C60030C1D7 /* Main_View */ = {
+			isa = PBXGroup;
+			children = (
+				3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */,
+				0FD63C962B844DAE002B51E2 /* FloorPlan_Test */,
+				393398D52B8C58C8004B852C /* BottomBar */,
+				396C97FA2B62117F00850CA4 /* Profile.swift */,
+			);
+			name = Main_View;
+			sourceTree = "<group>";
+		};
+		0F179E0D2B8DD3F60030C1D7 /* FireBase_Units */ = {
+			isa = PBXGroup;
+			children = (
+				0FBD41982B68AC8F0070185D /* Firebase_Login_Units */,
+			);
+			name = FireBase_Units;
+			sourceTree = "<group>";
+		};
 		0FBD415E2B68AA3F0070185D /* Firebase_API */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,12 +138,12 @@
 			path = Firebase_Login_Units;
 			sourceTree = "<group>";
 		};
-		0FD63C962B844DAE002B51E2 /* TEST */ = {
+		0FD63C962B844DAE002B51E2 /* FloorPlan_Test */ = {
 			isa = PBXGroup;
 			children = (
 				0FD63C972B844DF3002B51E2 /* DisplayView.swift */,
 			);
-			path = TEST;
+			path = FloorPlan_Test;
 			sourceTree = "<group>";
 		};
 		0FD63C992B84501E002B51E2 /* Firebase_Data */ = {
@@ -151,6 +166,7 @@
 		3985F91A2B3D630C005F3208 = {
 			isa = PBXGroup;
 			children = (
+				0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */,
 				3985F9252B3D630C005F3208 /* Smart_position_system */,
 				3985F9242B3D630C005F3208 /* Products */,
 			);
@@ -167,20 +183,15 @@
 		3985F9252B3D630C005F3208 /* Smart_position_system */ = {
 			isa = PBXGroup;
 			children = (
-				393398D52B8C58C8004B852C /* BottomBar */,
-				0FD63C992B84501E002B51E2 /* Firebase_Data */,
-				0FD63C962B844DAE002B51E2 /* TEST */,
-				0FBD41A32B68EB840070185D /* Smart-position-system-Info.plist */,
-				0FBD41982B68AC8F0070185D /* Firebase_Login_Units */,
 				0FBD415E2B68AA3F0070185D /* Firebase_API */,
+				0F179E0D2B8DD3F60030C1D7 /* FireBase_Units */,
+				0F179E0C2B8DD3C60030C1D7 /* Main_View */,
+				0FD63C992B84501E002B51E2 /* Firebase_Data */,
 				3985F9442B3D6550005F3208 /* Extensions */,
-				3985F9492B3D6BAE005F3208 /* RoomPlan-2D-Info.plist */,
-				3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */,
 				3985F93D2B3D6532005F3208 /* Room Capture */,
 				3985F9342B3D651F005F3208 /* Floor Plan */,
-				3985F92A2B3D630F005F3208 /* Assets.xcassets */,
 				3985F92C2B3D630F005F3208 /* Preview Content */,
-				396C97FA2B62117F00850CA4 /* Profile.swift */,
+				3985F92A2B3D630F005F3208 /* Assets.xcassets */,
 			);
 			path = Smart_position_system;
 			sourceTree = "<group>";
@@ -207,11 +218,10 @@
 		3985F93D2B3D6532005F3208 /* Room Capture */ = {
 			isa = PBXGroup;
 			children = (
+				3985F9492B3D6BAE005F3208 /* RoomPlan-2D-Info.plist */,
 				3985F93E2B3D6532005F3208 /* RoomCaptureScanView.swift */,
 				3985F93F2B3D6532005F3208 /* RoomCaptureModel.swift */,
 				3985F9402B3D6532005F3208 /* RoomCaptureRepresentable.swift */,
-				396C97FC2B68A94600850CA4 /* FloorPlanView.swift */,
-				396C98042B6A3EF000850CA4 /* ViewFloorPlanView.swift */,
 			);
 			path = "Room Capture";
 			sourceTree = "<group>";
@@ -316,7 +326,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBD41A02B68AD7E0070185D /* SignInView.swift in Sources */,
-				396C98052B6A3EF000850CA4 /* ViewFloorPlanView.swift in Sources */,
 				3985F9392B3D651F005F3208 /* DrawParameters.swift in Sources */,
 				3985F9412B3D6532005F3208 /* RoomCaptureScanView.swift in Sources */,
 				3985F93C2B3D651F005F3208 /* FloorPlanSurface.swift in Sources */,
@@ -330,7 +339,6 @@
 				3985F94C2B3D6C30005F3208 /* WelcomeView.swift in Sources */,
 				3985F93B2B3D651F005F3208 /* FloorPlanObject.swift in Sources */,
 				0FD63C982B844DF3002B51E2 /* DisplayView.swift in Sources */,
-				396C97FD2B68A94600850CA4 /* FloorPlanView.swift in Sources */,
 				0FD63C9B2B84504F002B51E2 /* FireStoreManager.swift in Sources */,
 				3985F9472B3D6550005F3208 /* simd_float4x4+EulerAnglesAndPosition.swift in Sources */,
 				0FBD419C2B68AD5F0070185D /* SignUpView.swift in Sources */,
