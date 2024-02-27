@@ -311,9 +311,14 @@ struct WelcomeView: View {
                                 Text("Places") }.tag(2)
                             
                         }
-                        .frame(minWidth: -50, idealWidth: 200, maxWidth: -450,
-                                                        minHeight: 100, idealHeight: 200, maxHeight: -700,
-                                                        alignment: .center)
+                        .frame(minWidth: -50, idealWidth: 200, maxWidth: -450,minHeight: 100, idealHeight: 200, maxHeight: -700,alignment: .center)
+                        Profile().tabItem {
+                            NavigationLink(destination: Profile()) {
+                                Image(systemName: "person.circle")
+                                Text("Places") }.tag(3)
+                            
+                
+            }
                     }
     }
 }
