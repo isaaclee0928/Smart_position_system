@@ -29,11 +29,13 @@ struct Profile: View {
                 .font(.headline)
                 .multilineTextAlignment(.center)
             
-            Text("Setting".uppercased())
+            Text("Today".uppercased())
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .clipped()
                 .font(.system(.subheadline, weight: .medium).width(.expanded))
                 .foregroundColor(.pink)
+                .lineSpacing(10)
+                .padding()
             
             ScrollView{
                 VStack(spacing: 5) {
@@ -48,15 +50,14 @@ struct Profile: View {
                                 .clipped()
                                 .mask { RoundedRectangle(cornerRadius: 8, style: .continuous) }
                             VStack(alignment: .leading) {
-                                Text("Setting")
+                                Text("Place")
                                     .font(.system(size: 16, weight: .medium, design: .default))
+                                Text("date")
                                 
                             }
                             .font(.subheadline)
                             Spacer()
-                            Image(systemName: "arrowshape.right.circle.fill")
-                                .foregroundColor(Color(.displayP3, red: 234/255, green: 76/255, blue: 97/255))
-                                .font(.title3)
+                            Text("Total Stay time")
                         }
                         Divider()
                     }
