@@ -311,7 +311,7 @@ struct WelcomeView: View {
                                 Text("Places") }.tag(2)
                             
                         }
-                        .frame(minWidth: -500, idealWidth: 350, maxWidth: -600,minHeight: 100, idealHeight: 650, maxHeight: -600,alignment: .center)
+                        .frame(minWidth: 485, idealWidth: -480, maxWidth:-700,minHeight: 0, idealHeight: 450, maxHeight:-100,alignment: .center)
                         Profile().tabItem {
                             NavigationLink(destination: Profile()) {
                                 Image(systemName: "person.circle")

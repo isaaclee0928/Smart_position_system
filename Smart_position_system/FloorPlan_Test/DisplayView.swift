@@ -18,7 +18,7 @@ struct DisplayView: View {
 
         ZStack {
             
-            Image("Floor-Plan")
+            Image("Floor_plan4")
                 .resizable()
                 
             //Firestore Call coordinate real time display
@@ -36,8 +36,8 @@ struct DisplayView: View {
             }
             
             ForEach(viewmodel.Tag) { tag in
-                var A_x = tag.coordinate[0] + Float.random(in: 1..<10)
-                var A_y = tag.coordinate[1] + Float.random(in: 1..<10)
+                var A_x = tag.coordinate[0]
+                var A_y = tag.coordinate[1]
                 VStack(alignment: .leading) {
                     Image(systemName: "")
                         .frame(width: 10, height: 10)
