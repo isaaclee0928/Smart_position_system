@@ -300,8 +300,8 @@ struct WelcomeView: View {
             
         }
         TabView {
-                        RoomCaptureScanView().tabItem {
-                            NavigationLink(destination: RoomCaptureScanView()) {
+                        HomeView().tabItem {
+                            NavigationLink(destination: HomeView()) {
                                 Image(systemName: "car")
                                 Text("Trips") }.tag(1)
                         }
@@ -312,8 +312,8 @@ struct WelcomeView: View {
                             
                         }
                         .frame(minWidth: 485, idealWidth: -480, maxWidth:-700,minHeight: 0, idealHeight: 450, maxHeight:-100,alignment: .center)
-                        Profile().tabItem {
-                            NavigationLink(destination: Profile()) {
+            AlertView().tabItem {
+                NavigationLink(destination: AlertView()) {
                                 Image(systemName: "person.circle")
                                 Text("Places") }.tag(3)
                             
