@@ -32,7 +32,7 @@ class FirestoreManager: ObservableObject {
                 print(error?.localizedDescription)
             } else {
                 if let snapshot = snapshot, !snapshot.isEmpty {
-                    print("Posted data got")
+                    
                     
                     
                     self.anchor = snapshot.documents.map { document in
@@ -40,9 +40,9 @@ class FirestoreManager: ObservableObject {
                         //Anchor_Coordinate(coordinate: document.get("coordinate") as? [Float] ?? [0] )
                         
                         let coordinate = data["coordinate"] as? [NSNumber] ?? []
-                        print("coordinate:   " ,coordinate)
+                        print("Anchor coordinate:   " ,coordinate)
                         let floatCoordinates = coordinate.map { $0.floatValue }
-                        print("float: ", floatCoordinates)
+                        print("Anchor float: ", floatCoordinates)
                         return Anchor_Coordinate(coordinate: floatCoordinates)
                     }
                     //print(self.anchor[0])
@@ -60,7 +60,7 @@ class FirestoreManager: ObservableObject {
                 print(error?.localizedDescription)
             } else {
                 if let snapshot = snapshot, !snapshot.isEmpty {
-                    print("Posted data got")
+                    
                     
                     self.Tag = snapshot.documents.map { document in
                         let data = document.data()
